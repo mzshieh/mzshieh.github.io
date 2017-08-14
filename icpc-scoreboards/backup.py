@@ -27,7 +27,7 @@ repeat = res.repeat
 if dest != '.':
     os.mkdirs(dest,exist_ok=True)
 
-for _ in range(repeat)
+for _ in range(repeat):
     run(['touch',dest+'/index.html'])
     run(['rm',dest+'/index.html'])
     run(['wget','-P',dest,url])
