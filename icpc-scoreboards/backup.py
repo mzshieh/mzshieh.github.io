@@ -25,7 +25,7 @@ dest = res.destination
 repeat = res.repeat
 
 if dest != '.':
-    os.mkdirs(dest,exist_ok=True)
+    os.makedirs(dest,exist_ok=True)
 
 for _ in range(repeat):
     run(['touch',dest+'/index.html'])
