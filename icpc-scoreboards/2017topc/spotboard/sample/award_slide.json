@@ -1,0 +1,23 @@
+[
+    {
+        "id": 69,
+        "rank": "Champion",
+        "icon": "crown",
+        "group": "National Taiwan University",
+        "name": "\\OAO/"
+    },
+    {
+        "id": 71,
+        "rank": "Runner Up",
+        "icon": "silver",
+        "group": "National Taiwan University",
+        "name": "JAW"
+    },
+    {
+        "id": 34,
+        "rank": "2nd Runner Up",
+        "icon": "bronze",
+        "group": "National Taiwan University",
+        "name": "TheKeyBoardmeow"
+    }
+]
