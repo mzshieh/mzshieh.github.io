@@ -1,0 +1,289 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[A4]{article}
+
+\usepackage{hyperref}
+\usepackage[left=2cm, right=2cm, top=2.5cm, bottom=2.5cm]{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+\usepackage{fontspec}		%XeLaTeX字型的package
+\newfontfamily{\Kai}[Mapping=tex-text]{AR PL UKai TW MBE} % \Kai切換字型為標楷體
+\newfontfamily{\Hei}[Mapping=tex-text]{Noto Sans CJK TC} % \Hei切換字型為黑體 
+\newfontfamily{\Sung}[Mapping=tex-text]{Noto Serif CJK TC} % \Song切換字型為宋體
+\setmonofont[Mapping=tex-text]{Source Code Pro} % 等寬字型
+\setromanfont[Mapping=tex-text]{Source Serif Pro} % Roman字型
+%\newfontfamily{\H}[Mapping=tex-text]{HeiTi} % \K切換字型為標楷體
+
+% Set your name here
+\def\name{Min-Zheng Shieh {\Kai 謝旻錚}}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {computer science, information science, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+%\geometry{
+%  body={6.5in, 8.5in},
+%  left=1.0in,
+%  top=1.25in
+%}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  CS 337\\
+	\href{http://www.it.nctu.edu.tw/}{Information Technology Service Center}\\
+  \href{http://www.nctu.edu.tw/}{National Chiao Tung University} \\
+  1001 University Road, Hsinchu City, Taiwan 300
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & +886-3-5712121 EXT 31265 \\
+    Fax: & +886-3-5714031 \\
+    Email: & \href{mailto:mzshieh@nctu.edu.tw}{\tt mzshieh@nctu.edu.tw} \\
+    Homepage: & \href{http://sites.google.com/site/mzshieh}{\tt https://sites.google.com/site/mzshieh} \\
+  \end{tabular}
+\end{minipage}
+
+\section*{Research Interests}
+\begin{itemize}
+\item Computational complexity
+\item Approximation
+\item Algorithms
+\item Combinatorics
+\item Coding theory
+%\item Game theory
+\end{itemize}
+
+%\section*{Personal}
+
+%\begin{itemize}
+%\item Born on December 1, 1980.
+%\item Taiwan Citizen.
+%\end{itemize}
+
+
+\section*{Education}
+
+\begin{itemize}
+
+  \item Ph.D. in Computer Science and Engineering of National Chiao Tung University (2011)
+  \item M.S. in Computer Science and Information Engineering of National Chiao Tung University (2004)
+  \item B.S. in Computer Science and Information Engineering of National Chiao Tung University (2003)
+ 
+\end{itemize}
+
+\section*{Work Experience}
+
+\subsection*{Academic Positions}
+\begin{itemize}
+\item 2016-present: Assistant professor of the Information Technology Service Center, NCTU
+\item 2012-2016: Assistant research fellow of the Information and Communication Technology Laboratories, NCTU
+\item 2011-2012: Postdoctoral researcher of the Information and Communication Technology Laboratories, NCTU
+\end{itemize}
+\subsection*{Course Taught}
+\begin{itemize}
+\item 2018 Spring: Competitive Programming (I), Department of Computer Science, NCTU
+\item 2018 Spring: Scratch and Python, Information Technology Service Center, NCTU
+\item 2017 Fall: Competitive Programming (II), Department of Computer Science, NCTU
+\item 2017 Fall: Scratch and Python, Information Technology Service Center, NCTU
+\item 2017 Summer: Scratch and Python, Information Technology Service Center, NCTU
+\item 2017 Spring: Competitive Programming (I), Department of Computer Science, NCTU
+\item 2017 Spring: Scratch and Python, Information Technology Service Center, NCTU
+\item 2016 Fall: Competitive Programming (III), Department of Computer Science, NCTU
+\item 2016 Fall: Scratch and Python, Information Technology Service Center, NCTU
+\item 2016 Summer: Scratch and Python, Information Technology Service Center, NCTU
+\item 2016 Spring: Competitive Programming (II), Department of Computer Science, NCTU
+\item 2015 Fall: Competitive Programming (III), Department of Computer Science, NCTU
+\item 2015 Fall: Competitive Programming (I), Department of Computer Science, NCTU
+\item 2015 Spring: Competitive Programming (II), Department of Computer Science, NCTU
+\item 2014 Fall: Competitive Programming (I), Department of Computer Science, NCTU
+\item 2014 Spring: Introduction to Algorithms, Department of Computer Science, NCTU
+\item 2014 Spring: Problem Solving and Programming Techniques, Department of Computer Science, NCTU
+\item 2013 Summer: Data Structures (Honors), Department of Computer Science, NCTU
+\item 2013 Spring: Advanced Computer Programming, Institute of Computer Science and Engineering, NCTU
+\item 2012 Summer: Advanced Competitive Programming (III), Institute of Computer Science and Engineering, NCTU
+\item 2012 Spring: Advanced Computer Programming, Institute of Computer Science and Engineering, NCTU
+\item 2010 fall: Lectures in Computer Science (III), Department of Computer Science, NCTU
+\item 2010 fall: Lectures in Computer Science (I), Department of Computer Science, NCTU
+\end{itemize}
+\subsection*{Research Assistant}
+\begin{itemize}
+\item 2006-2009: Mitac's project on ``Route Planning for Navigation System,'' led by Prof. Shi-Chun Tsai
+\item 2006-2009: National Science Council's project on ``Probabilistic Proof Systems, Inapproximability, and Expander Graphs", led by Prof. Shi-Chun Tsai
+\end{itemize}
+\subsection*{Websites}
+\begin{itemize}
+\item 2007-2008: Technology consultant of UbicTek ({\Sung 長春吉科技})
+\item 2001-2003: Administrator of~~{\tt bbs.wretch.cc} {\Sung 無名小站} (acquired by Yahoo, 2007)
+\end{itemize}
+\subsection*{Teaching Assistant}
+\begin{itemize}
+\item 2011 spring: Introduction to Algorithms
+\item 2010 spring: Introduction to Algorithms
+\item 2009 fall: Formal Languages and Theory of Computation
+\item 2009 summer: Competitive Programming(I)
+\item 2009 spring: Introduction to Algorithms
+\item 2007 fall: Advanced Programming and Algorithms
+\item 2007 spring: Theory of Computation
+\item 2006 fall: Introduction to algorithms
+\item 2006 spring: Combinatorics
+\item 2005 fall: Introduction to algorithms
+\item 2005 spring: Formal language
+\item 2004 fall: Algorithms
+\item 2004 spring: Problem Solving Technics
+\item 2003 fall: Introduction to Computer Science
+\end{itemize}
+
+\subsection*{Programming Contest}
+\begin{itemize}
+\item 2014: Lecturer, Taiwanese Olympiads of Informatics
+\item 2012-present: Coach of National Chiao Tung University ACM ICPC Teams
+\item 2006-2011: Assistant coach of National Chiao Tung University ACM ICPC Teams
+\end{itemize}
+
+\section*{Honors}
+\subsection*{Memberships and Scholarships}
+\begin{itemize}
+\item Honorable Member of The Phi Tau Phi Scholastic Honor Society of The Republic of China, 2012
+(Top $10\%$ of the doctoral graduates)
+\item Scholarship of Elite Teaching Assistant, two times, 2007 and 2009
+\item Scholarship of College of Electric Engineering and Computer Science, 2003
+\item Honorable Member of The Phi Tau Phi Scholastic Honor Society of The Republic of China, 2003
+(Top $1\%$ of the graduates)
+\end{itemize}
+
+\subsection*{Awards}
+\subsubsection*{Contestant}
+\begin{itemize}
+\item Academic Achievement Awards in NCTU CSIE, 5 times during 1999-2003
+\item 4th place in ACM Intercollegiate Programming Contest Kaohsiung Site, 2002
+\item 6th place in ACM Intercollegiate Programming Contest Taipei Site, 2001
+\item 2nd place in National Collegiate Programming Contest, 2001
+\item 5th place in Trend Micro Million Programming Contest, 2001
+\item 3rd place in Internet Problem Solving Contest, 2001
+\item 5th place in ACM Intercollegiate Programming Contest Taipei Site, 2000
+\item Silver medalist in International Olympiads in Informatics, 1999
+\end{itemize}
+\subsubsection*{Coach}
+\begin{itemize}
+\item 2nd place in National Collegiate Programming Contest, 2017
+\item 2nd place in National Collegiate Programming Contest, 2016
+\item 44th place in ACM International Collegiate Programming Contest World Finals, 2016
+\item 2nd place in ACM International Collegiate Programming Contest Jakarta Regional, 2015
+\item 5th place in ACM International Collegiate Programming Contest Taipei Regional, 2015
+\item 7th place in ACM International Collegiate Programming Contest Phuket Regional, 2015
+\item 9th place in ACM International Collegiate Programming Contest Daejeon Regional, 2015
+\item 2nd place in National Collegiate Programming Contest, 2015
+\item 6th place in ACM International Collegiate Programming Contest Taichung Regional, 2014
+\item 9th place in ACM International Collegiate Programming Contest Daejeon Regional, 2014
+\item 3rd place in National Collegiate Programming Contest, 2014
+\item 12th place in ACM International Collegiate Programming Contest Daejeon Regional, 2014
+\item 12th place in ACM International Collegiate Programming Contest Chiayi Regional, 2013
+\item 3rd place in National Collegiate Programming Contest, 2013
+\item 9th place in ACM International Collegiate Programming Contest Kaohsiung Regional, 2012
+\item 3rd place in National Collegiate Programming Contest, 2012
+\end{itemize}
+
+\section*{Publications}
+
+\subsection*{Journal papers}
+
+\begin{enumerate}
+\item Min-Zheng Shieh, Shi-Chun Tsai, ``Inapproximability results for the weight problems of subgroup permutation codes,'' IEEE Transactions on Information Theory (SCI), Vol. 58(11), pp. 6907--6915, 2012. (JCR impact factor 2011: 3.009)
+\item Min-Zheng Shieh, Shi-Chun Tsai, Ming-Chuan Yang, ``On the Inapproximability of Maximum Intersection Problems,'' Information Processing Letters (SCI), Vol. 112(19), pp. 723--727, 2012. (JCR impact factor 2011: 0.455)
+\item Min-Zheng Shieh, Shi-Chun Tsai, ``Computing the Ball Size of Frequency Permutations under Chebyshev Distance,'' Linear Algebra and its Applications (SCI), Vol. 437(1), pp. 324--332, 2012. (JCR impact factor 2011: 0.974)
+\item Chia-Jung Lee, Te-Tsung Lin, \emph{Min-Zheng Shieh}, Shi-Chun Tsai, Hsin-Lung Wu, ``Decoding Permutation Arrays with Ternary Vectors,'' Designs, Codes and Cryptography (SCI), Vol. 61(1), pp. 1--9, 2011. (JCR impact factor 2011: 0.875)
+\item Li-Jui Chen, Jinn-Jy Lin, \emph{Min-Zheng Shieh}, Shi-Chun Tsai,
+``More on the Derek-Magnus Game,''  Theoretical Computer Science (SCI), Vol. 412, pp. 339--344, 2011. 
+(JCR impact factor 2011: 0.665)
+\item \emph{Min-Zheng Shieh} and Shi-Chun Tsai, ``Improved Bound on Approximating Jug Measuring Problem,'' Journal of Information Science and Engineering (SCI), Vol. 27, No. 3, pp. 1159--1163, 2011. 
+(JCR impact factor 2011: 0.175)
+\item \emph{Min-Zheng Shieh} and Shi-Chun Tsai, ``Decoding Frequency Permutation Arrays under Chebyshev distance,'' IEEE Transactions on Information Theory (SCI), Vol 56(11), pp. 5730--5737, 2010.
+(JCR impact factor 2010: 2.725)
+\item \emph{Min-Zheng Shieh} and Shi-Chun Tsai, ``Jug Measuring: Algorithms and Complexity,'' Theoretical Computer Science (SCI), Vol 396, pp. 50--62, 2008.
+(JCR impact factor 2010: 0.838)
+\item Ying-Jie Liao, \emph{Min-Zheng Shieh} and Shi-Chun Tsai, ``Arranging Numbers on Circles to Reach Maximum Total Variations,'' the Electronic Journal of Combinatorics (SCI), R47: Volume 14(1), 2007.
+(JCR impact factor 2010: 0.626)
+\end{enumerate}
+
+\subsection*{Conference papers}
+
+\begin{enumerate}
+\item \emph{Min-Zheng Shieh} and Shi-Chun Tsai, ``Computing the Ball Size of Frequency Permutations under Chebyshev Distance,'' 2011 IEEE International Symposium on Information Theory (ISIT 2011), July 31- Augest 5, 2011, Saint Petersburg, Russia.
+\item \emph{Min-Zheng Shieh} and Shi-Chun Tsai, ``On the Minimum Weight Problem of Permutation Codes under Chebyshev Distance,'' 2010 IEEE International Symposium on Information Theory (ISIT 2010), June 13- June 18, 2010, Austin, Texas, USA.
+\item \emph{Min-Zheng Shieh} and Shi-Chun Tsai, ``Decoding Frequency Permutation Arrays under Infinite Norm,'' 2009 IEEE International Symposium on Information Theory (ISIT 2009), June 28- July 3, 2009, Seoul, Korea.
+\item Ming Yu-Hsieh, \emph{Min-Zheng Shieh}, Shi-Chun Tsai, ``A Greedy Approach to the Coin Exchange Problem,'' International Computer Symposium 2004, Tainan, Taiwan.
+\end{enumerate}
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
